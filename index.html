@@ -1,11 +1,71 @@
 <!DOCTYPE HTML>
-
 <html>
 	<head>
 		<title>Login</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<!--
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
+-->        
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    
+        <script>
+        var onDeviceReady=function(){                             // called when Cordova is ready
+           if( window.Cordova && navigator.splashscreen ) {     // Cordova API detected
+               $.ui.launch(); 
+               navigator.splashscreen.hide() ;                 // hide splash screen
+            }
+        } ;
+        document.addEventListener("deviceready", onDeviceReady, false) ;
+    </script>
+    
+    <script>   
+        $.ui.autoLaunch = false; 
+        $.ui.backButtonText = "Back";
+    
+        $(document).ready(function(){
+            $.ui.launch();
+            
+            // setup signin and signup button events
+            $("#login").on("click", function(){
+                signIn();
+            });
+            
+            $("#register").on("click", function(){
+                signUp();
+            });
+        });
+                
+        function signIn(){
+            
+            // sigin code here
+            
+            $.ui.loadContent("main", null, null, "fade");
+        }
+                
+        function signUp(){
+        
+            // signup code here
+            
+            $.ui.loadContent("main", null, null, "fade");
+        }   
+                
+        function startApp(){
+            // clears all back button history
+            $.ui.clearHistory();  
+            
+            // your app code here
+        }
+
+    </script>        
+        
+        
+        
+        
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery.scrolly.min.js"></script>
@@ -37,19 +97,6 @@
 
 					<!-- Nav -->
 						<nav id="nav">
-							<!--
-							
-								Prologue's nav expects links in one of two formats:
-								
-								1. Hash link (scrolls to a different section within the page)
-								
-								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
-
-								2. Standard link (sends the user to another page/site)
-
-								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
-							
-							-->
 							<ul>
 								<li><a href="#" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Mi cuenta</span></a></li>
 								<li><a href="#" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Paradas</span></a></li>
