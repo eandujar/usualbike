@@ -14,7 +14,7 @@
 
 	body
 	{
-		background: #fff;
+		background: #555;
 	}
 
 		body.is-loading *
@@ -34,10 +34,10 @@
 	body,input,textarea,select
 	{
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 19pt;
+		font-size: 18pt;
 		font-weight: 300;
-		line-height: 1.75em;
-		color: #888;
+		line-height: 1.5em;
+		color: #666;
 	}
 
 	h1,h2,h3,h4,h5,h6
@@ -107,7 +107,7 @@
 
 	a
 	{
-		text-decoration: none;
+        text-decoration: none;
 		color: inherit;
 		border-bottom: dotted 1px rgba(128,128,128,0.5);
 		-moz-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
@@ -116,15 +116,15 @@
 		-ms-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		outline: 0;
-	}
+    }
 
 		a:hover
 		{
-			color: #97b4cf;
+            color: #97b4cf;
 			border-bottom-color: rgba(255,255,255,0);
-		}
+        }
 
-	sub
+    sub
 	{
 		position: relative;
 		top: 0.5em;
@@ -479,7 +479,37 @@
 			{
 				background-color: #1770d0;
 			}
-		
+
+        .button2
+        {
+		    position: static;
+		    display: inline-block;
+		    border-radius: 0.35em;
+		    color: #fff !important;
+            text-align:center;
+		    text-decoration: none;
+		    padding: 0 0.5em 0 0.5em;
+		    background-color: #ff9600;
+		    border: 0;
+		    cursor: pointer;
+		    -moz-transition: background-color 0.35s ease-in-out;
+		    -webkit-transition: background-color 0.35s ease-in-out;
+		    -o-transition: background-color 0.35s ease-in-out;
+		    -ms-transition: background-color 0.35s ease-in-out;
+		    transition: background-color 0.35s ease-in-out;
+        }
+
+			.button2:hover
+			{
+				background-color: #ffab32;
+			}
+			
+			.button2:active
+			{
+				background-color: #ffab32;
+			}
+
+	
 	/* Item */
 	
 		.item
@@ -540,7 +570,7 @@
 		color: #fff;
 		background: #222629 url('images/overlay.png');
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0,0,0,0.1);
-		text-align: right;
+		/*text-align: right;*/
 	}
 	
 		#header .top
@@ -610,7 +640,7 @@
 		
 		#logo .image
 		{
-			position: absolute;
+			position: relative;
 			left: 0;
 			top: 0;
 		}
@@ -651,12 +681,12 @@
 					
 						#nav ul li a span:before
 						{
-							position: absolute;
+							position: relative;
 							left: 0;
 							color: #41484c;
 							text-align: center;
 							width: 1.25em;
-							line-height: 1.75em;
+							line-height: 1.5em;
 						}
 
 					#nav ul li a.active
@@ -672,7 +702,7 @@
 
 							#nav ul li a.active span:before
 							{
-								color: #e27689;
+								color: #fff;
 							}
 
 /*********************************************************************************/
@@ -765,9 +795,10 @@
 			}
 		
 			#main > section.one
-			{
-				background-color: #81918E;
+			{                    
+                background-color: #555;
 				background-image: url('../images/banner.jpg');
+                background-position: center center;
 			}
 
 			#main > section.two
@@ -784,3 +815,18 @@
 			{
 				background-color: #e8edec;
 			}
+
+	
+/*********************************************************************************/
+/* Pantalla principal (Registrarme)                                                                        */
+/*********************************************************************************/
+
+    .registrarme
+    {
+        background-color:#555;
+        height:100%;
+        text-align:right;
+        font-size:0.7em;
+        padding:4px;
+        color: #fff;
+    }
