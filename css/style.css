@@ -821,11 +821,12 @@
 
 	
 /*********************************************************************************/
-/* Pantalla principal (Registrarme)                                                                        */
+/* Pantalla principal (Registrarme)                                              */
 /*********************************************************************************/
 
     .registrarme
     {
+        position:fixed;
         background-color:#555;
         height:100%;
         text-align:right;
