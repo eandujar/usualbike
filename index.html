@@ -10,11 +10,13 @@
         <meta charset="utf-8" />
 <!--        <meta name="format-detection" content="telephone=no" />-->
 <!--        <meta name="msapplication-tap-highlight" content="no" />-->
+
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
 <!--        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />-->
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!--        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
         <meta name=”viewport” content=”user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=high-dpi” />
-    
+
+        
         <script>
         var onDeviceReady=function(){                             // called when Cordova is ready
            if( window.Cordova && navigator.splashscreen ) {     // Cordova API detected
@@ -64,11 +66,8 @@
         }
 
     </script>        
-        
-        
-        
-        
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+
+        <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery.scrolly.min.js"></script>
 		<script src="js/jquery.scrollzer.min.js"></script>
@@ -143,7 +142,7 @@
 									<div class="12u"><input type="text" name="user" placeholder="Usuario" /></div>
                                 </div>
 								<div class="row 100%">
-                                    <div class="12u"><input type="text" name="pass" placeholder="Contraseña" type="password" /></div>
+                                    <div class="12u"><input type="password" name="pass" placeholder="Contraseña" /></div>
 								</div>
 								<div class="row">
 									<div class="12u">

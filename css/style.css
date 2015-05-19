@@ -826,9 +826,12 @@
 
     .registrarme
     {
+        margin:0;
+        /*overflow: hidden;        */
         position:fixed;
         background-color:#555;
-        height:100%;
+        width:100%;
+        /*height:100%;*/
         text-align:right;
         font-size:0.7em;
         padding:4px;
