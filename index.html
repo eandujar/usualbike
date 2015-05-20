@@ -18,11 +18,12 @@
 
         
     <script>
-        var onDeviceReady=function(){                             // called when Cordova is ready
+        var onDeviceReady=function(){                           // called when Cordova is ready
            if( window.Cordova && navigator.splashscreen ) {     // Cordova API detected
                $.ui.launch(); 
-               navigator.splashscreen.show() ;                 // show splash screen
+               navigator.splashscreen.show() ;                  // show splash screen
             }
+            checkConnection();
         } ;
         document.addEventListener("deviceready", onDeviceReady, false) ;
     </script>
@@ -80,9 +81,8 @@
 
             alert('Connection type: ' + states[networkState]);
         }
-        checkConnection();
 
-    </script>        
+</script>        
 
         <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 		<script src="js/jquery.min.js"></script>
@@ -143,7 +143,7 @@
 		<div id="main">
                 <div class="registrarme">
                         <span style="margin-right:5px;">¿Eres nuevo en Usual Bike?</span> 
-                        <a href="#" class="button2">REGISTRARME</a>
+                        <a href="#" id="register" class="button2">REGISTRARME</a>
                 </div>            
             <!-- Intro -->
 					<section id="top" class="one dark cover">                        
